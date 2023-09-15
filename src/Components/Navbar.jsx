@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importa Link desde 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { useTheme } from '../Components/utils/ThemeContext';
 
 const Navbar = () => {

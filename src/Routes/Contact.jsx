@@ -40,7 +40,6 @@ const Contact = () => {
     e.preventDefault();
     dispatch({ type: 'SUBMIT_FORM' });
 
-    // Simulamos un envío de formulario
     setTimeout(() => {
       if (state.nombre.length > 5 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(state.email)) {
         dispatch({ type: 'SUBMIT_SUCCESS' });

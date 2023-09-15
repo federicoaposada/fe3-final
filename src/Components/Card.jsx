@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Importa Link
+import { Link } from "react-router-dom";
 import { useTheme } from '../Components/utils/ThemeContext';
 
 const Card = ({ name, username, id }) => {

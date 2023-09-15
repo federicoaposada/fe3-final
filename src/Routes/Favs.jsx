@@ -22,7 +22,6 @@ const Favs = () => {
           })
         );
 
-        // Mapear la respuesta para tener el formato que deseas
         const formattedFavorites = responses.map((dentist) => ({
           name: dentist.name,
           username: dentist.username,
@@ -31,7 +30,6 @@ const Favs = () => {
 
         setDentistsDetails(formattedFavorites);
 
-        // Agregar los favoritos al Local Storage
         localStorage.setItem("favoriteDentistsDetails", JSON.stringify(formattedFavorites));
       } catch (error) {
         console.error('Error fetching data:', error);
